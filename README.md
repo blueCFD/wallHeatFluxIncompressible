@@ -6,6 +6,7 @@ Utility originally by the forum member Eelco van Vliet, for OpenFOAM 2.1.0: http
 It's the one provided in the branch `OF21x`.
 
 This git repository further adapts the utility for OpenFOAM 2.2.x and 2.3.x, done by Bruno Santos (wyldckat@github).
+Then further adapted by Bruno Santos as well for blueCFD-Core 2.3-1.
 
 WARNING: If you're planning on using OpenFOAM 2.2.0, then use the branch `OF21x`.
 
@@ -16,8 +17,8 @@ License
 The same as OpenFOAM(R), namely GNU GPL v3. For more information, see the file LICENSE.
 
 
-Building on OpenFOAM 2.3.x, 2.2.x, 2.1.x
-========================================
+Building on blueCFD-Core 2.3-1
+==============================
 
 Using Git
 ---------
@@ -32,34 +33,22 @@ Using Git
   2. Clone the repository and go into the cloned repository:
 
      ```
-     git clone https://github.com/wyldckat/wallHeatFluxIncompressible.git
+     git clone https://github.com/blueCFD/wallHeatFluxIncompressible.git
      cd wallHeatFluxIncompressible
      ```
 
   3. Checkout the repository respective to the version of OpenFOAM you are using:
 
-   * OpenFOAM 2.3.x:
+   * blueCFD-Core 2.3-1:
 
      ```
-     git checkout OF23x
-     ```
-
-   * OpenFOAM 2.2.x:
-
-     ```
-     git checkout OF22x
-     ```
-
-   * OpenFOAM 2.1.x:
-
-     ```
-     git checkout OF21x
+     git checkout blueCFD-Core-2.3-1
      ```
 
    4. Build `wallHeatFluxIncompressible` by running:
 
      ```
-     wmake
+     ./Allwmake
      ```
 
 
@@ -75,33 +64,21 @@ Using Zip
 
   2. Get the Zip file for the repository respective to the version of OpenFOAM you are using:
 
-   * OpenFOAM 2.3.x:
+   * blueCFD-Core 2.3-1:
 
      ```
-     wget https://github.com/wyldckat/wallHeatFluxIncompressible/archive/OF23x.zip
-     ```
-
-   * OpenFOAM 2.2.x:
-
-     ```
-     wget https://github.com/wyldckat/wallHeatFluxIncompressible/archive/OF22x.zip
-     ```
-
-   * OpenFOAM 2.1.x:
-
-     ```
-     wget https://github.com/wyldckat/wallHeatFluxIncompressible/archive/OF21x.zip
+     wget https://github.com/blueCFD/wallHeatFluxIncompressible/archive/blueCFD-Core-2.3-1.zip
      ```
 
    3. Unzip the respective file and go into the respective folder, for example:
 
      ```
-     unzip OF23x.zip
-     cd wallHeatFluxIncompressible-OF23x
+     unzip blueCFD-Core-2.3-1.zip
+     cd wallHeatFluxIncompressible-blueCFD-Core-2.3-1
      ```
      
    4. Build `wallHeatFluxIncompressible` by running:
 
      ```
-     wmake
+     ./Allwmake
      ```
